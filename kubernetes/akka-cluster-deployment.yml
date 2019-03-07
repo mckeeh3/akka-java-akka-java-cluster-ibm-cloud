@@ -4,7 +4,7 @@ metadata:
   labels:
     app: akka-cluster-demo
   name: akka-cluster-demo
-  namespace: akka-cluster-1
+  namespace: default
 spec:
   replicas: 3
   selector:
@@ -24,8 +24,8 @@ spec:
     spec:
       containers:
       - name: akka-cluster-demo
-        image: akka-cluster-demo:1.0.2
-        imagePullPolicy: Never
+        image: "registry.ng.bluemix.net/akka-cluster-demo/akka-cluster-demo:1.0.4"
+        imagePullPolicy: IfNotPresent
         livenessProbe:
           tcpSocket:
             port: 8558
