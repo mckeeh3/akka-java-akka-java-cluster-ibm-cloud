@@ -1,2 +1,2 @@
 # akka-java-cluster-openshift
-An Akka Java cluster OpenShift demo application 
+An Akka Java cluster IBM Cloud demo application
